@@ -18,13 +18,13 @@
   </head>
 
   <body>
-    <!-- Верхняя линия -->
-    <header class="nav-white-bg-cl header-page">
+    <!-- ВЕРХНЯЯ ЛИНИЯ -->
+    <header class="nav-header">
       <div class="container main-nav">
-        <a class="logo" href="index.html"
-          ><span lang="en" class="logo-part1-web">Web</span
-          ><span lang="en" class="logo-part2-studio">Studio</span></a
+        <a href="./index.html" class="link-logo-header" lang="en"
+          >Web<span class="sublogo-header">Studio</span></a
         >
+
         <nav>
           <ul class="list site-nav">
             <li class="item">
@@ -60,14 +60,16 @@
     </header>
 
     <main>
-      <!-- Портфолио -->
-      <section class="section portfolio">
+      <!-- PORTFOLIO -->
+      <section class="section-portfolio">
         <div class="container">
-          <h1 class="title1-hidden-h1">Наше Портфолио</h1>
+          <h1 class="visually-hidden">Наше Портфолио</h1>
           <!-- Filters -->
           <ul class="list button-list">
             <li class="item">
-              <button class="button-portfolio" type="button">Все</button>
+              <button class="button-portfolio actively" type="button">
+                Все
+              </button>
             </li>
             <li class="item">
               <button class="button-portfolio" type="button">Веб-сайты</button>
@@ -82,182 +84,152 @@
               <button class="button-portfolio" type="button">Маркетинг</button>
             </li>
           </ul>
+
           <!--Portfolio items-->
           <ul class="list our-projects">
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio1.jpg"
-                      alt="Веб-сайтТехнокряк"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Технокряк</h2>
-                      <p class="name-work-p">Веб-сайт</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio1.jpg"
+                  alt="Веб-сайтТехнокряк"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Технокряк</h2>
+                  <p class="portfolio-name">Веб-сайт</p>
+                </div>
+              </a>
             </li>
 
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio2.jpg"
-                      alt="Дизайн Постер New Orlean vs Golden Star"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">
-                        Постер New Orlean vs Golden Star
-                      </h2>
-                      <p class="name-work-p">Дизайн</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio2.jpg"
+                  alt="Дизайн Постер New Orlean vs Golden Star"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio-name">Дизайн</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio3.jpg"
-                      alt="Приложение Ресторан Seafood"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Ресторан Seafood</h2>
-                      <p class="name-work-p">Приложение</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio3.jpg"
+                  alt="Приложение Ресторан Seafood"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Ресторан Seafood</h2>
+                  <p class="portfolio-name">Приложение</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio4.jpg"
-                      alt="Маркетинг Проект Prime"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Проект Prime</h2>
-                      <p class="name-work-p">Маркетинг</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio4.jpg"
+                  alt="Маркетинг Проект Prime"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Проект Prime</h2>
+                  <p class="portfolio-name">Маркетинг</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio5.jpg"
-                      alt="Приложение роект Boxes"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Проект Boxes</h2>
-                      <p class="name-work-p">Приложение</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio5.jpg"
+                  alt="Приложение роект Boxes"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Проект Boxes</h2>
+                  <p class="portfolio-name">Приложение</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio6.jpg"
-                      alt="Веб-сайт Inspiration has no Borders"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Inspiration has no Borders</h2>
-                      <p class="name-work-p">Веб-сайт</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio6.jpg"
+                  alt="Веб-сайт Inspiration has no Borders"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Inspiration has no Borders</h2>
+                  <p class="portfolio-name">Веб-сайт</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio7.jpg"
-                      alt="Дизайн Издание Limited Edition"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Издание Limited Edition</h2>
-                      <p class="name-work-p">Дизайн</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio7.jpg"
+                  alt="Дизайн Издание Limited Edition"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Издание Limited Edition</h2>
+                  <p class="portfolio-name">Дизайн</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio8.jpg"
-                      alt="Маркетинг Проект LAB"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Проект LAB</h2>
-                      <p class="name-work-p">Маркетинг</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio8.jpg"
+                  alt="Маркетинг Проект LAB"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Проект LAB</h2>
+                  <p class="portfolio-name">Маркетинг</p>
+                </div>
+              </a>
             </li>
+
             <li class="item">
-              <article class="cards-item">
-                <a href="" class="cards-link">
-                  <div class="cards-img">
-                    <img
-                      src="./images/portfolio/portfolio9.jpg"
-                      alt="Приложение Growing Business"
-                      width="370"
-                    />
-                    <div class="description">
-                      <h2 class="name-work-h2">Growing Business</h2>
-                      <p class="name-work-p">Приложение</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
+              <a href="" class="cards-link">
+                <img
+                  src="./images/portfolio/portfolio9.jpg"
+                  alt="Приложение Growing Business"
+                  width="370"
+                />
+                <div class="description">
+                  <h2 class="name-work">Growing Business</h2>
+                  <p class="portfolio-name">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <!-- Подвал -->
+
+    <!-- ПОДВАЛ -->
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
           <div class="footer-address">
-            <a class="footer-logo" href="index.html"
-              ><span lang="en" class="footer-logo-web">Web</span
-              ><span lang="en" class="footer-logo-studio">Studio</span></a
+            <a href="./index.html" class="link-logo-footer" lang="en"
+              >Web<span class="sublogo-footer">Studio</span></a
             >
             <address>
               <ul class="list">
                 <li class="item">
                   <a
-                    class="address-link"
+                    class="link-address"
                     href="https://goo.gl/maps/Poxogy9ZwxsRHQay8"
                     target="_blank"
                     >г. Киев, пр-т Леси Украинки, 26</a
@@ -276,6 +248,7 @@
               </ul>
             </address>
           </div>
+
           <!-- Присоединяйтесь -->
           <div class="footer-social">
             <p class="footer-social-subscribe">Присоединяйтесь</p>
