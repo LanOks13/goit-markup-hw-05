@@ -391,8 +391,7 @@ img {
   opacity: 1;
 } */
 
-/* ????? */
-/* .work-description {
+.work-description {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -400,7 +399,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--alt-text-cl);
-} */
+}
 
 /* НАША КОМАНДА - OUR TEAM */
 .team-section {
