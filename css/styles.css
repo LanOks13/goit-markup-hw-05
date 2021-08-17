@@ -800,8 +800,7 @@ address .item:not(:last-child) {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(101%);
-
-  transition: transform var(--main-transition), opacity var(--main-transition);
+  transition: transform 250ms ease;
 }
 
 .cards-link:hover .portfolio-overlay,
@@ -877,7 +876,7 @@ address .item:not(:last-child) {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
 
-  /* transition: transform var(--transition-duration) var(--timing-function); */
+  transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .modal-close-button {
