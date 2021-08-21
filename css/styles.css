@@ -474,11 +474,20 @@ img {
   align-items: center;
 }
 
+.social-icons-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icons-link,
+/* .social-icons-link, */
 .footer-social-icons-link {
   display: flex;
   justify-content: center;
@@ -513,6 +522,7 @@ img {
   fill: var(--primary-bg-cl);
 }
 
+.social-icons-item:hover,
 .social-icons-link:hover,
 .social-icons-link:focus,
 .footer-social-icons-link:hover,
