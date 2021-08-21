@@ -489,9 +489,12 @@ img {
 }
 
 .social-icons-link {
+  color: var(--icons-color);
   background-color: var(--alt-text-cl);
+  /* background-color: greenyellow; */
 
-  transition: background-color var(--main-transition);
+  transition: background-color var(--main-transition),
+    color var(--main-transition);
 }
 
 .footer-social-icons-link {
@@ -501,15 +504,13 @@ img {
 }
 
 .social-icons-svg {
-  fill: var(--icons-color);
+  fill: currentColor;
 
-  transition: fill var(--main-transition);
+  /* transition: fill var(--main-transition); */
 }
 
 .footer-social-icons-svg {
   fill: var(--primary-bg-cl);
-
-  transition: fill var(--main-transition);
 }
 
 .social-icons-link:hover,
@@ -891,6 +892,10 @@ address .item:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-black-svg {
