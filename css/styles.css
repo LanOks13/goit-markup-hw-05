@@ -474,20 +474,11 @@ img {
   align-items: center;
 }
 
-.social-icons-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}
-
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
 
-/* .social-icons-link, */
+.social-icons-link,
 .footer-social-icons-link {
   display: flex;
   justify-content: center;
@@ -502,8 +493,8 @@ img {
   background-color: var(--alt-text-cl);
   /* background-color: greenyellow; */
 
-  transition: background-color var(--main-transition),
-    color var(--main-transition);
+  transition: color var(--main-transition),
+    background-color var(--main-transition);
 }
 
 .footer-social-icons-link {
@@ -522,7 +513,6 @@ img {
   fill: var(--primary-bg-cl);
 }
 
-.social-icons-item:hover,
 .social-icons-link:hover,
 .social-icons-link:focus,
 .footer-social-icons-link:hover,
@@ -535,25 +525,11 @@ img {
   fill: var(--primary-bg-cl);
 }
 
-/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+/* ============= ПОСТОЯННЫЕ КЛИЕНТЫ ============= */
 
 .reg-customers {
   padding-bottom: var(--padding-section);
   padding-top: var(--padding-section);
-}
-
-.logo-customers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  overflow: hidden;
-  /* padding: 16px 32px; */
-
-  transition: border-color var(--main-transition);
 }
 
 .set-customers {
@@ -581,24 +557,41 @@ img {
   margin-left: 30px;
 } */
 
+.logo-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #afb1b8;
+  color: var(--icons-color);
+  /* padding: 16px 32px; */
+
+  transition: color var(--main-transition), border-color var(--main-transition);
+}
+
 .icon-Logo {
   /* width: 106px;
   height: 60px; */
-  /* fill: currentColor; */
-  fill: #afb1b8;
+  fill: currentColor;
+  /* fill: #afb1b8;
 
-  transition: fill var(--main-transition);
+  transition: fill var(--main-transition); */
 }
 
 .logo-customers:focus,
 .logo-customers:hover {
+  color: var(--accent-cl);
   border: 1px solid var(--accent-cl);
 }
 
-.logo-customers:focus .icon-Logo,
+/* .logo-customers:focus .icon-Logo,
 .logo-customers:hover .icon-Logo {
   fill: var(--accent-cl);
-}
+} */
 
 /* ПОДВАЛ - FOOTER */
 .footer {
