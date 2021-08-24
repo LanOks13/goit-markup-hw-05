@@ -77,7 +77,7 @@ img {
   height: auto;
 }
 
-/* ВЕРХНЯЯ ЛИНИЯ - HEADER */
+/* ============= ВЕРХНЯЯ ЛИНИЯ - HEADER ============= */
 .nav-header {
   background-color: var(--primary-bg-cl);
   border-bottom: 1px solid var(--border-header-box);
@@ -224,7 +224,7 @@ img {
   margin-right: 10px;
 }
 
-/* ШАПКА - ГЕРОЙ -HERO */
+/* ============= ШАПКА - ГЕРОЙ -HERO ============= */
 .hero-section {
   background-color: var(--black-bg-cl);
   padding-top: 200px;
@@ -287,7 +287,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* ОСОБЕННОСТИ - FEATURE */
+/* ============= ОСОБЕННОСТИ - FEATURE ============= */
 
 .visually-hidden {
   position: absolute !important;
@@ -345,7 +345,7 @@ img {
   padding-bottom: var(--padding-section);
 }
 
-/* ЧЕМ МЫ ЗАНИМАЕМСЯ - WORK SECTION */
+/* ============= ЧЕМ МЫ ЗАНИМАЕМСЯ - WORK SECTION ============= */
 
 .work-title,
 .team-title,
@@ -411,7 +411,7 @@ img {
   color: var(--alt-text-cl);
 }
 
-/* НАША КОМАНДА - OUR TEAM */
+/* ============= НАША КОМАНДА - OUR TEAM ============= */
 .team-section {
   background-color: var(--accent-bg-cl);
   padding-top: var(--padding-section);
@@ -466,7 +466,7 @@ img {
   margin-bottom: 16px;
 }
 
-/* SOCIAL LINKS */
+/* ============= SOCIAL LINKS ============= */
 
 .social-icons {
   display: flex;
@@ -491,22 +491,13 @@ img {
 .social-icons-link {
   color: var(--icons-color);
   background-color: var(--alt-text-cl);
-  /* background-color: greenyellow; */
 
   transition: color var(--main-transition),
     background-color var(--main-transition);
 }
 
-.footer-social-icons-link {
-  background: rgba(255, 255, 255, 0.1);
-
-  transition: background-color var(--main-transition);
-}
-
 .social-icons-svg {
   fill: currentColor;
-
-  /* transition: fill var(--main-transition); */
 }
 
 .footer-social-icons-svg {
@@ -577,9 +568,6 @@ img {
   /* width: 106px;
   height: 60px; */
   fill: currentColor;
-  /* fill: #afb1b8;
-
-  transition: fill var(--main-transition); */
 }
 
 .logo-customers:focus,
@@ -588,12 +576,8 @@ img {
   border: 1px solid var(--accent-cl);
 }
 
-/* .logo-customers:focus .icon-Logo,
-.logo-customers:hover .icon-Logo {
-  fill: var(--accent-cl);
-} */
+/* ============= ПОДВАЛ - FOOTER ============= */
 
-/* ПОДВАЛ - FOOTER */
 .footer {
   background-color: var(--black-bg-cl);
   padding-top: var(--padding-footer);
@@ -655,7 +639,7 @@ address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* FOOTER - СОЦИАЛЬНЫЕ СЕТИ */
+/* ============= FOOTER - Social Links ============= */
 
 .footer-social-subscribe {
   font-weight: bold;
@@ -667,13 +651,19 @@ address .item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* PORTFOLIO */
+.footer-social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--main-transition);
+}
+
+/* ============= PORTFOLIO ============= */
 
 .section-portfolio {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
 }
-/*  ПОЧАТОК CSS КНОПОК-ФІЛЬТРІВ */
+/*  ============= ПОЧАТОК CSS КНОПОК-ФІЛЬТРІВ ============= */
 .button-list {
   display: flex;
   flex-wrap: wrap;
@@ -718,9 +708,9 @@ address .item:not(:last-child) {
   border-radius: 4px;
 }
 
-/*  КІНЕЦЬ CSS КНОПОК-ФІЛЬТРІВ */
+/* ============= КІНЕЦЬ CSS КНОПОК-ФІЛЬТРІВ ============= */
 
-/* OUR-PROJECTS */
+/* ============= OUR-PROJECTS ============= */
 .description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -783,7 +773,7 @@ address .item:not(:last-child) {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* PORTFOLIO-OVERLAY */
+/* ============= PORTFOLIO-OVERLAY ============= */
 
 .our-projects .item {
   width: 370;
@@ -851,13 +841,14 @@ address .item:not(:last-child) {
 
   transition-duration: 1500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-  /* transition: opacity var(--transition-duration) var(--timing-function); */
+  /* opacity: 1; */
+  transition: opacity var(--transition-duration) var(--timing-function),
+    visibility var(--transition-duration) var(--timing-function);
 }
 
 .backdrop.is-hidden {
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 }
 
