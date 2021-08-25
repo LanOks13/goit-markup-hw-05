@@ -765,6 +765,8 @@ address .item:not(:last-child) {
   display: block;
   text-decoration: none;
   color: inherit;
+
+  transition: box-shadow var(--main-transition);
 }
 
 .cards-link:hover,
